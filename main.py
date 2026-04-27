@@ -16,9 +16,9 @@ app = FastAPI(
 # CORS — allow frontend to call the API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Restrict in production
+    allow_origins=["https://jobpilottrack.netlify.app/"],  # Restrict in production
     allow_credentials=True,
-    allow_methods=["https://jobpilottrack.netlify.app/"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
